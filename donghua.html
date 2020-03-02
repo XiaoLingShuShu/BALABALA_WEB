@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>巴拉巴拉("▔□▔)/ 搞事~~BaLaBaLa</title>
+
+        <link rel="stylesheet"
+              href="./css/homepage/reset.css">
+        <link rel="stylesheet"
+              href="./css/homepage/common.css">
+        <link rel="stylesheet"
+              href="./css/homepage/index.css">
+        <link rel="stylesheet" href="css/homepage/header.css">
+        <script src="./js/homepage/jquery.min.js"></script>
+        <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="./js/homepage/script.js"></script>
+        <script src="./js/homepage/request.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#bili-header-m").hide();
+                $("#user-info").hide();
+            });
+
+            function hideLogin() {//移出
+                $("#bili-header-m").hide();
+            }
+
+            function showLogin() {//移入
+                $("#bili-header-m").show();
+            }
+
+        </script>
+    </head>
+    <body>
+
+
+        <header id="header">
+            <div id="page_top">
+                <div class="bg-wrap">
+                    <div class="bg"></div>
+                    <div class="mask"></div>
+                </div>
+                <div class="header-top">
+                    <div class="page-width clearfix">
+                        <div class="header-top__nav">
+                            <ul>
+                                <li class="item item-home"><a href="./index.html">主站</a></li>
+                                <li class="item"><a href="会员购.html">会员购</a>
+                                <li class="item"><a onclick="document.location='https://www.bilibili.com/blackboard/bnj2020.html'">拜年祭</a>
+                                <li class="item"><a href="http://www.balabala.com/videoFileTop">我要投稿</a>
+                                <li class="item"><a href="2.html">进入论坛</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="header-top__user">
+                            <!--判断是否登录-->
+                                <div class="login-box">
+                                <a href="login.html">登录</a>
+                                <span></span>
+                                <a href="login.html">注册</a>
+                                </div>
+
+                            <div class="login-box" onmouseover="showLogin()" id="user-info">
+                                <a href="#">欢迎</a>
+                                <span></span>
+                                <a href="#" id="user-Name">null</a>
+                            </div>
+
+                        </div>
+
+                        <!--个人中心-->
+                        <div id="bili-header-m" class="bili-header-m report-wrap-module stardust-common" >
+                            <div class="nav-menu">
+                                <div class="nav-wrapper bili-wrapper">
+                                    <!---->
+                                    <div class="nav-wrapper-right">
+                                        <div class="nav-con" id="userInfo">
+                                            <ul class="nav-con-ul">
+                                                <li report-id="playpage_account" class="nav-item profile-info">
+                                                    <!--个人中心-->
+                                                    <div class="profile-m dd-bubble" onmouseleave="hideLogin()">
+                                                        <div class="header-u-info">
+                                                            <a href="https://space.bilibili.com/" target="_blank"
+                                                               class="t">
+                                                                <!--头像-->
+                                                                <div class="i-face">
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                    <img src="" class="face"/>
+                                                                </div>
+                                                            </a>
+
+                                                            <div class="header-uname">
+                                                                <b class="big-vip-red" id="userName">null</b>
+                                                                <p class="vip-type">
+                                                                    <a href="https://account.bilibili.com/account/big"
+                                                                       target="_blank">
+                                                                        <span class="big-vip-red">年度大会员</span></a>
+                                                                </p></div>
+                                                            <div class="btns-profile clearfix">
+                                                                <div class="coin fl"><a
+                                                                        href="https://account.bilibili.com/site/coin"
+                                                                        target="_blank" title="硬币">
+                                                                    <i class="bili-icon bi"></i>
+                                                                    <i class="bili-icon jia"></i>
+                                                                    <span class="num">802</span>
+                                                                    <span class="num-move">803.1</span>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="currency fl"><a
+                                                                        href="https://pay.bilibili.com/bb_balance.html"
+                                                                        target="_blank" title="B币"><i
+                                                                        class="bili-icon"></i><span
+                                                                        class="num">0</span></a></div>
+                                                                <div class="ver phone fr verified"><a
+                                                                        href="https://passport.bilibili.com/account/security#/bindphone"
+                                                                        target="_blank"><i class="bili-icon"></i><span
+                                                                        class="tips">已绑定</span></a>
+                                                                </div>
+                                                                <div class="ver email fr verified"><a
+                                                                        href="https://passport.bilibili.com/account/security#/bindmail"
+                                                                        target="_blank"><i class="bili-icon"></i><span
+                                                                        class="tips">已绑定</span></a>
+                                                                </div>
+                                                                <div class="link-to-bind-mobile"></div>
+                                                            </div>
+                                                            <div class="grade clearfix"><span class="hd fl">等级</span><a
+                                                                    href="https://account.bilibili.com/account/record?type=exp"
+                                                                    target="_blank">
+                                                                <div class="bar fr">
+                                                                    <div class="lt lv5"></div>
+                                                                    <div class="rate" style="width: 62%;"></div>
+                                                                    <div class="num">
+                                                                        <div>
+                                                                            18095<span>/28800</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                                <div class="desc-tips"><span class="arrow-left"></span>
+                                                                    <div class="lv-row">作为<strong>LV5</strong>，你可以：
+                                                                    </div>
+                                                                    <div>1、购买邀请码（1个/月）<br>2、发射个性弹幕（彩色、高级、顶部、底部）<br>3、参与视频互动（评论、添加tag）<br>4、投稿成为偶像
+                                                                    </div>
+                                                                    <a href="https://www.bilibili.com/blackboard/help.html#%E4%BC%9A%E5%91%98%E7%AD%89%E7%BA%A7%E7%9B%B8%E5%85%B3?id=7251c4ab69d44a8ebbbd276dea46d790"
+                                                                       target="_blank" class="help-link">会员等级相关说明
+                                                                        &gt;</a></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="member-menu">
+                                                            <ul class="clearfix">
+                                                                <li><a href="https://account.bilibili.com/account/home"
+                                                                       target="_blank" class="account"><i
+                                                                        class="bili-icon b-icon-p-account"></i>个人中心
+                                                                </a></li>
+                                                                <li>
+                                                                    <a href="https://member.bilibili.com/v2#/upload-manager/article"
+                                                                       target="_blank" class="member"><i
+                                                                            class="bili-icon b-icon-p-member"></i>投稿管理
+                                                                    </a></li>
+                                                                <li><a href="https://pay.bilibili.com/" target="_blank"
+                                                                       class="wallet"><i
+                                                                        class="bili-icon b-icon-p-wallet"></i>B币钱包
+                                                                </a></li>
+                                                                <li><a href="https://link.bilibili.com/p/center/index"
+                                                                       target="_blank" class="live"><i
+                                                                        class="bili-icon b-icon-p-live"></i>直播中心
+                                                                </a></li>
+                                                                <li><a href="https://show.bilibili.com/orderlist"
+                                                                       target="_blank"
+                                                                       class="bml"><i
+                                                                        class="bili-icon b-icon-p-ticket"></i>订单中心
+                                                                </a></li>
+                                                                <li><!----></li>
+                                                                <li><a href="https://www.bilibili.com/v/cheese/mine"
+                                                                       target="_blank"
+                                                                       class="cheese"><i
+                                                                        class="bili-icon b-icon-p-cheese"></i>我的课程
+                                                                </a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="member-bottom">
+                                                            <a onclick="LoginOut()" class="logout">退出</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!---->
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-c">
+                <div class="page-width">
+                    <a href="#" id="header_logo"></a>
+                    <!--搜索框-->
+                    <div class="search">
+                        <form action="#" class="searchform">
+                            <input type="text" autocomplete="off" placeholder="干货！10分钟速览中国电影工业" class="search-keyword">
+                            <button type="submit" class="search-submit"></button>
+                        </form>
+                    </div>
+                    <div class="header-title">哔哩哔哩 (゜-゜)つロ 干杯~</div>
+                </div>
+            </div>
+        </header>
+
+        <nav id="nav">
+            <div class="page-width clearfix">
+                <ul class="nav-list">
+                    <li class="item item-home"><a href="./index.html" class="link">首页</a>
+                    </li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>887</i>
+                        </div>
+                        动画
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>23</i>
+                        </div>
+                        番剧
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>999+</i>
+                        </div>
+                        音乐
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>152</i>
+                        </div>
+                        舞蹈
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>999+</i>
+                        </div>
+                        游戏
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>999+</i>
+                        </div>
+                        科技
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>999+</i>
+                        </div>
+                        生活
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>77</i>
+                        </div>
+                        鬼畜
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>416</i>
+                        </div>
+                        时尚
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>100</i>
+                        </div>
+                        广告
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>999+</i>
+                        </div>
+                        娱乐
+                    </a></li>
+                    <li class="item"><a href="TODO" class="link">
+                        <div class="num">
+                            <i>916</i>
+                        </div>
+                        影视
+                    </a></li>
+                    <li class="item item-square"><a href="TODO" class="link">广场</a>
+                        <div class="nav-square__hover">
+                            <ul>
+                                <li><a href="#"><i class="icon-activity"></i>活动中心</a></li>
+                                <li><a href="#"><i class="icon-game"></i>游戏中心</a></li>
+                                <li><a href="#"><i class="icon-news"></i>新闻中心</a></li>
+                                <li><a href="#"><i class="icon-friend"></i>画友</a></li>
+                                <li><a href="#"><i class="icon-tv"></i>芒果TV</a></li>
+                            </ul>
+                            <a href="#" class="activity">
+                                <img src="images/homepage/app-qrcode.png" alt="#" style="width: 240px;height: 84px;">
+                            </a>
+
+                        </div>
+                    </li>
+
+                    <li class="item item-room"><a href="#" class="link">小黑屋</a></li>
+                    <li class="item item-room">
+                        <div class="nav-gif" id="qiulingyang">
+                            <img src="./images/homepage/cont/bnj.gif" alt="求领养">
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div id="banner">
+            <div class="page-width clearfix">
+
+                <!--轮播图-->
+                <div class="slider fl">
+                    <div class="slider-img">
+                        <a href="https://www.bilibili.com/video/av89455687" slider-title="幻想乡拾遗" target="_blank">
+                            <img src="./images/donghua/1.jpg" alt="#" width="440" height="220">
+                        </a>
+                        <a href="https://www.bilibili.com/blackboard/bh3tqlx.html" slider-title="崩坏三最新动画短片" target="_blank">
+                            <img src="./images/donghua/2.jpg" alt="#" width="440" height="220">
+                        </a>
+                        <a href="https://www.bilibili.com/video/av91212604" slider-title="哔哩哔哩周刊排行榜" target="_blank">
+                            <img src="./images/donghua/3.jpg" alt="#" width="440" height="220">
+                        </a>
+                        <a href="https://www.bilibili.com/video/av91660450/" slider-title="心动日常" target="_blank">
+                            <img src="./images/donghua/4.jpg" alt="#" width="440" height="220">
+                        </a>
+                    </div>
+                    <div class="slider-title">
+                        <p>幻想乡拾遗</p>
+                    </div>
+                    <div class="slider-btn">
+                        <span class="cur" id="lunbo-0"></span>
+                        <span id="lunbo-1"></span>
+                        <span id="lunbo-2"></span>
+                        <span id="lunbo-3"></span>
+                    </div>
+                    <a href="#" class="slider-more">更多</a>
+                </div>
+
+                <div class="banner-list fr">
+                    <ul id="DailyPush">
+                        <!--遍历日推-->
+                        <!--  <li>
+                              <a href="http://www.bilibili.com/api/homepage">
+                              <img src="<%=request.getContextPath()%>${fuck.videoImage}" alt="#">
+                              <div class="info">
+                                  <p class="title">${fuck.videoName }</p>
+                                  <p class="author">up主：admin</p>
+                                  <p class="play">播放：${fuck.videoLookCount}</p>
+                              </div>
+                          </a>
+                          </li>-->
+                    </ul>
+                    <a href="#" class="btn btn-prev">昨日</a> <a href="#"
+                                                               class="btn btn-next">一周</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="page-width">
+                <!-- 推广 -->
+
+
+                <!-- 舞蹈 -->
+                <div class="mainCont clearfix" id="dance" js-move="true">
+                    <div class="pic-list fl" js-tab="true">
+                        <div class="pic-list__title">
+                            <i class="icon icon-dance"></i>
+                            <h2>MAD·AMV</h2>
+                            <div class="tab-title">
+                                <a href="#" class="cur">有新动态</a>
+
+                            </div>
+
+                            <div class="more-wrap">
+                                <a href="#" class="dynamic" id="shuaxin"><i></i>392条新动态</a>
+                            </div>
+                        </div>
+                        <ul class="pic-list__wrapper clearfix tab-cont__item tab-cont__cur" id="animation">
+                            <!-- 动画分区的动态 -->
+
+                            <!--<li class="item">
+                                <a href="video.sf?dizhi=${list.videoAddress}&shipingID=${list.videoID}" class="img-link">
+                                    <img src="<%=request.getContextPath()%>${list.videoImage}" alt="#">
+                                <span class="mask"></span>
+                                    <span class="time">${list.videoTime}</span>
+                            </a>
+                                <div class="img-info">
+                                    <a href="video.sf?dizhi=${list.videoAddress}&shipingID=${list.videoID}">${list.videoName }</a>
+                                    <div class="btm">
+                                        <div class="user">
+                                            <i></i>admin
+                                        </div>
+                                        <div class="online">
+                                            <i>*</i>$1231
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>-->
+
+                        </ul>
+                    </div>
+                    <div class="main-side fr" js-tab="true">
+                        <div class="main-side__title">
+                            <div class="rank-t">
+                                <h3>热门</h3>
+                            </div>
+                            <div class="tab-title">
+                                <a href="#" class="cur">全部</a>
+                            </div>
+                            <!-- <div class="side-select">
+                  <span>三日</span>
+                  <i></i>
+                </div> -->
+                        </div>
+                        <div class="main-side__cont">
+                            <div class="tab-cont">
+                                <ul class="tab-cont__item main-rank" id="did2">
+                                    <!-- ajax -->
+                                </ul>
+                            </div>
+                            <button type="button" class="more" id="chakan">
+                                查看更多<i></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 游戏 -->
+                <div class="mainCont clearfix" id="game" js-move="true">
+                    <div class="pic-list fl" js-tab="true">
+                        <div class="pic-list__title">
+                            <i class="icon icon-game"></i>
+                            <h2>MMD·3D</h2>
+                            <div class="tab-title">
+                                <a href="#" class="cur">有新动态</a>
+                            </div>
+                            <div class="more-wrap">
+                                <a href="#" class="dynamic" id="shuaxin1"><i></i>392条新动态</a>
+                            </div>
+                        </div>
+                        <ul class="pic-list__wrapper clearfix tab-cont__item tab-cont__cur" id="Mad">
+
+                            <!--MAD分区动态-->
+                            <!--<li class="item"><a
+                                    href="video.sf?dizhi=${list2.videoAddress}&shipingID=${list2.videoID}"
+                                    class="img-link"> <img
+                                    src="<%=request.getContextPath()%>${list2.videoImage}" alt="#">
+                                <span class="mask"></span> <span class="time">${list2.videoTime}</span>
+                            </a>
+                                <div class="img-info">
+                                    <a
+                                            href="video.sf?dizhi=${list2.videoAddress}&shipingID=${list2.videoID}">${list2.videoName
+                                        }</a>
+                                    <div class="btm">
+                                        <div class="user">
+                                            <i></i>admin
+                                        </div>
+                                        <div class="online">
+                                            <i></i>${list2.videoLookCount}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>-->
+
+
+                        </ul>
+                    </div>
+                    <div class="main-side fr" js-tab="true">
+                        <div class="main-side__title">
+                            <div class="rank-t">
+                                <h3>热门</h3>
+                            </div>
+                            <div class="tab-title">
+                                <a href="#" class="cur">全部</a>
+                            </div>
+                            <!-- 						<div class="side-select">
+                                <span>三日</span> <i></i>
+                            </div> -->
+                        </div>
+                        <div class="main-side__cont">
+                            <div class="tab-cont">
+                                <ul class="tab-cont__item main-rank" id="did3">
+
+                                </ul>
+
+                            </div>
+                            <button type="button" class="more" id="chakan3">
+                                查看更多<i></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 科技 -->
+                <div class="mainCont clearfix" id="technology" js-move="true">
+                    <div class="pic-list fl" js-tab="true">
+                        <div class="pic-list__title">
+                            <i class="icon icon-technology"></i>
+                            <h2>特摄</h2>
+                            <div class="tab-title">
+                                <a href="#" class="cur">有新动态</a>
+                            </div>
+                            <div class="more-wrap">
+                                <a href="#" class="dynamic" id="shuaxin2"><i></i>392条新动态</a>
+                            </div>
+                        </div>
+                        <ul class="pic-list__wrapper clearfix tab-cont__item tab-cont__cur" id="Comic">
+
+                            <!--动漫分区-->
+                            <!--<li class="item"><a
+                                    href="video.sf?dizhi=${list3.videoAddress}&shipingID=${list3.videoID}"
+                                    class="img-link"> <img
+                                    src="<%=request.getContextPath()%>${list3.videoImage}" alt="#">
+                                <span class="mask"></span> <span class="time">${list3.videoTime}</span>
+                            </a>
+                                <div class="img-info">
+                                    <a
+                                            href="video.sf?dizhi=${list3.videoAddress}&shipingID=${list3.videoID}">${list3.videoName
+                                        }</a>
+                                    <div class="btm">
+                                        <div class="user">
+                                            <i></i>admin
+                                        </div>
+                                        <div class="online">
+                                            <i></i>${list3.videoLookCount}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>-->
+
+                        </ul>
+                    </div>
+                    <div class="main-side fr" js-tab="true">
+                        <div class="main-side__title">
+                            <div class="rank-t">
+                                <h3>热门</h3>
+                            </div>
+                            <div class="tab-title">
+                                <a href="#" class="cur">全部</a>
+                            </div>
+                            <!-- <div class="side-select">
+                                <span>三日</span> <i></i>
+                            </div> -->
+                        </div>
+                        <div class="main-side__cont">
+                            <div class="tab-cont">
+                                <ul class="tab-cont__item main-rank" id=did4>
+
+                                </ul>
+
+                            </div>
+                            <button type="button" class="more" id="chakan4">
+                                查看更多<i></i>
+                            </button>
+
+
+                            <!-- 这里是AJAX 提交 后台刷新数据 -->
+                            <script
+                                    src="./js/donghua/ajax.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="copyright" style="text-align: center">
+                <h2>&copy; 2020 No talent can be established without suffering.
+                    <a href="https://space.bilibili.com/15404186" target="_blank">晓凌蔬</a>
+                </h2>
+            </div>
+
+    </body>
+</html>

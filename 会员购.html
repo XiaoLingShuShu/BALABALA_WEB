@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>balabala会员购</title>
+
+        <!-- <meta name="referrer" content="never"> -->
+        <meta name="baidu-site-verification" content="zHnqq5v2gS">
+        <link rel="shortcut icon" href="https://activity.hdslb.com/zzjs/show/favicon.ico">
+        <link href="css/item/vendor.aade76778e378ed7f66df3e175becfd4.css" rel="stylesheet">
+        <link href="css/item/home.42d875f689014643ebb62ec314da83d0.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div id="app">
+            <div data-v-7becb7b9="" class="nav-header-wrapper">
+                <div data-v-7becb7b9="" class="nav-header">
+                    <div data-v-7becb7b9="" class="nav-header-logo"></div>
+                    <div data-v-7becb7b9="" class="icon nav-header-tv-icon"></div>
+                    <div data-v-7becb7b9="" class="nav-header-mainsite" >
+                        <a href="http://www.balabala.com">主站</a>
+                    </div>
+
+                    <!--搜索框-->
+                    <div data-v-7becb7b9="" class="nav-header-search-bar-wrapper">
+                        <input data-v-7becb7b9="" placeholder="活动、嘉宾、场馆" type="text" name="" class="nav-header-search-bar">
+                        <div data-v-7becb7b9="" class="icon search-icon">
+                            <a data-v-7becb7b9="" target="_blank" href="javascript:void(0);" class="search-link"></a>
+                        </div> <!---->
+                    </div>
+
+                    <div data-v-7becb7b9="" class="nav-header-regis-login">
+                        <div data-v-7becb7b9="" class="nav-header-login">
+                            <a data-v-7becb7b9="" href="login.html" >注册</a>
+                        </div>
+                        <div data-v-7becb7b9="" class="nav-header-middle-line"></div>
+                        <div data-v-7becb7b9="" class="nav-header-login">
+                            <a data-v-7becb7b9="" href="login.html" >登录</a>
+                        </div>
+                    </div>
+
+                    <!--用户头像-->
+                    <div data-v-7becb7b9="" class="user-info" onmouseover="show()">
+                        <a data-v-7becb7b9="" target="_blank" href="https://account.bilibili.com/site/home.html" class="user-center-link">
+                        <div data-v-7becb7b9="" class="profile-img"></div>
+                    </a>
+                    </div>
+
+                    <!--用户信息-->
+                    <div data-v-7becb7b9="" class="user-panel" onmouseleave="hide()">
+                        <div data-v-7becb7b9="" class="user-uname"> null
+                        </div>
+                        <div data-v-7becb7b9="" class="panel-list">
+                            <div data-v-7becb7b9="" class="user-center-item"><span data-v-7becb7b9=""
+                                                                                   class="icon user-center-icon"></span> <a
+                                    data-v-7becb7b9="" target="_blank"
+                                    href="https://account.bilibili.com/site/home.html">个人中心</a></div>
+                            <div data-v-7becb7b9="" class="order-center-item"><span data-v-7becb7b9=""
+                                                                                    class="icon order-center-icon"></span> <a
+                                    data-v-7becb7b9="" target="_blank" href="//show.bilibili.com/orderlist">订单中心</a></div>
+                        </div>
+                        <div data-v-7becb7b9="" class="login-out">
+                            <a data-v-7becb7b9="" onclick="LoginOut()">退出登录</a>
+                        </div>
+                    </div>
+                    <!---->
+
+                    <div data-v-7becb7b9="" class="order-and-icon-wrapper">
+                        <div data-v-7becb7b9="" class="icon order-icon"></div>
+                        <div data-v-7becb7b9="" class="order-center">订单中心</div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+
+
+            <!--分类条-->
+            <div class="selector-wrapper">
+                <div class="wrapper city-selector-wrapper">
+                    <div class="title">城市:</div>
+                    <div class="selector-content">
+                        <ul class="city-list">
+                            <!--<li class="first city-item active">全国</li>-->
+                            <!--<li class="city-item">
+                                上海
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrapper type-selector-wrapper">
+                    <div class="title type-title">类型:</div>
+                    <div class="selector-content">
+                        <ul class="type-list">
+                            <li class="current-type"><span class="active">全部类型
+                                <!----></span></li>
+                            <li class="current-type">
+                                <span class="">演出
+                                    <span class="number-span" id="totalNum">
+
+                                    </span>
+                                </span>
+                            </li></ul>
+                    </div>
+                </div>
+                <div class="wrapper order-selector-wrapper">
+                    <div class="title">数据:</div>
+                    <div class="selector-content">
+                        <ul class="order-list">
+                            <li class="first city-item active" id="totalNumCount">总条数</li>
+                            <li class="first city-item" id="pageCount">总页数</li>
+                            <li class="first city-item" id="thisPage">本页</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project-list-wrapper">
+                <div class="project-list">
+
+                    <!--商品列表-->
+                    <!--<div class="project-list-item">
+                        <div class="project-list-item-img" style="background-image: url(images/item/suzhouACG.jpeg);"></div>
+                        <div class="project-list-item-detail">
+                            <div class="project-list-item-title" style="-webkit-box-orient: vertical;">苏州·ACG大感谢祭</div>
+                            <div class="project-list-item-time">
+                                <span class="icon time-icon"></span>2020.02.15 - 02.15
+                            </div>
+                            <div class="project-list-item-address">
+                                <span class="icon address-icon"></span>
+                                <span class="city-name">苏州市</span>
+                                <span class="venue-name-and-address">江南四季酒店（军供大厦）</span>
+                            </div>
+                            <div class="project-list-item-price">
+                                <div class="not-free">
+                                    <span class="price-symbol">¥</span>
+                                    <span class="price">25</span>
+                                    <span class="promo-item">独家</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+                </div>
+            </div>
+
+            <!--分页条-->
+            <div class="whole-pagination-wrapper">
+                <div class="pagination-wrapper">
+                    <div class="arrow pagination-left-arrow disabled" id="left" onclick="prePage()"></div> <!---->
+                    <div class="pagination">
+                        <!--<span class="pageNum active" id="page-1">1</span>
+                        <span class="pageNum" id="page-2">2</span>
+                        <span class="pageNum" id="pageNumEnd"></span>-->
+                    </div>
+                    <div class="arrow pagination-right-arrow" id="right" onclick="nextPage()"></div>
+                </div>
+            </div>
+
+            <!--右下角建议-->
+            <div class="toolbar-wrapper">
+                <div class="left-slider-wrapper">
+                    <a target="_blank" href="https://space.bilibili.com/15404186" class="service-wrapper">
+                    <div class="service-icon"></div>
+                    <div class="toolbar-title">建议</div>
+                </a>
+                </div>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="js/item/jquery.min.js"></script>
+        <script type="text/javascript" src="js/item/script.js"></script>
+        <script type="text/javascript" src="js/item/ajax.js"></script>
+    </body>
+</html>

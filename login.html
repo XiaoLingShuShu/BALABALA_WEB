@@ -1,0 +1,126 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html lang="zxx">
+
+<head>
+	<title>巴拉巴拉("▔□▔)/ 搞事~~BaLaBaLa</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Triple Forms Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+
+	<!-- css files -->
+	<link rel="stylesheet" href="css/register/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link href="css/register/font-awesome.min.css" rel="stylesheet">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //css files -->
+
+    <script src="js/register/ajax.js"></script>
+    <script src="js/register/jquery-1.4.4.min.js"></script>
+
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext" rel="stylesheet">
+	<!-- //web-fonts -->
+</head>
+
+<body>
+	<div class="main-bg">
+		<!-- title -->
+		<h1>巴拉巴拉("▔□▔)/ 搞事~~BaLaBaLa</h1>
+		<!-- //title -->
+		<div class="sub-main-w3">
+			<div class="image-style">
+			</div>
+			<!-- vertical tabs -->
+			<div class="vertical-tab">
+
+				<!--登录表单-->
+				<div id="section1" class="section-w3ls">
+					<input type="radio" name="sections" id="option1" checked>
+					<label for="option1" class="icon-left-w3pvt"><span class="fa fa-user-circle" aria-hidden="true"></span>登录</label>
+					<article>
+						<form>
+							<h3 class="legend">登录</h3>
+							<div class="input">
+								<span class="fa fa-envelope-o" aria-hidden="true"></span>
+								<input type="text" placeholder="用户名" name="username" required id="LoginUserName"/>
+							</div>
+							<div class="input">
+								<span class="fa fa-key" aria-hidden="true"></span>
+								<input type="password" placeholder="密码" name="password" required id="LoginPassWord"/>
+							</div>
+							<button type="button" onclick="ajaxLogin()" class="btn submit">登录</button>
+							<a href="#" class="bottom-text-w3ls">忘记密码？点左边的按钮嗷(-_-#)</a>
+						</form>
+					</article>
+				</div>
+
+				<!--注册表单-->
+				<div id="section2" class="section-w3ls">
+					<input type="radio" name="sections" id="option2">
+					<label for="option2" class="icon-left-w3pvt"><span class="fa fa-pencil-square" aria-hidden="true"></span>注册</label>
+					<article>
+						<form>
+							<h3 class="legend">注册</h3>
+							<div class="input">
+								<span class="fa fa-user-o" aria-hidden="true"></span>
+								<input type="text" placeholder="用户名" name="userName" required id="RegisterUserName"/>
+							</div>
+							<div class="input">
+								<span class="fa fa-key" aria-hidden="true"></span>
+								<input type="password" placeholder="密码" name="passWord" required id="RegisterPassWord"/>
+							</div>
+							<div class="input">
+								<span class="fa fa-phone" aria-hidden="true"></span>
+								<input type="text" placeholder="手机号码" name="phone" required id="RegisterPhone"/>
+							</div>
+							<button type="button" onclick="ajaxRegister()" class="btn submit">注册</button>
+						</form>
+					</article>
+				</div>
+
+				<!--找回密码表单-->
+				<div id="section3" class="section-w3ls">
+					<input type="radio" name="sections" id="option3">
+					<label for="option3" class="icon-left-w3pvt"><span class="fa fa-lock" aria-hidden="true"></span>忘记密码</label>
+					<article>
+						<form>
+							<h3 class="legend">重置</h3>
+							<div class="input">
+								<span class="fa fa-user-o" aria-hidden="true"></span>
+								<input type="text" placeholder="用户名" name="userName" required id="ResetUserName"/>
+							</div>
+							<div class="input">
+								<span class="fa fa-key" aria-hidden="true"></span>
+								<input type="password" placeholder="新的密码" name="passWord" required id="ResetPassWord"/>
+							</div>
+							<div class="input">
+								<span class="fa fa-phone" aria-hidden="true"></span>
+								<input type="text" placeholder="注册时填写的手机号码" name="phone" required id="ResetPhone"/>
+							</div>
+							<button type="button" onclick="ajaxReset()" class="btn submit">重置</button>
+						</form>
+					</article>
+				</div>
+			</div>
+
+			<!-- //vertical tabs -->
+			<div class="clear"></div>
+		</div>
+		<!-- copyright -->
+		<div class="copyright">
+			<h2>&copy; 2020 No talent can be established without suffering.
+				<a href="https://space.bilibili.com/15404186" target="_blank">晓凌蔬</a>
+			</h2>
+		</div>
+		<!-- //copyright -->
+	</div>
+
+</body>
+
+</html>
