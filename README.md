@@ -1,3 +1,4 @@
+# 项目已经迁移至Gitee:https://gitee.com/MoonKife/BALABALA_WEB
 # BALABALA_WEB
 极度真实的BiLiBiLi前后端项目(SpringCloud_SpringBoot_Mybatis_Maven_Redis_单点登录_权限控制)  
     技术栈：  
